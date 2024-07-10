@@ -1,0 +1,42 @@
+{
+  "name": "my-app",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vite --host",
+    "build": "vite build",
+    "preview": "NODE_ENV=production bun run ./server.ts",
+    "preview-static": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier format --write .",
+    "outdated": "bunx npm-check-updates --interactive --format group"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.13.0",
+    "@types/bun": "^1.1.5",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.5.0",
+    "eslint-plugin-solid": "^0.14.1",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2",
+    "vike-solid": "^0.6.1"
+  },
+  "dependencies": {
+    "hono": "^4.4.7",
+    "signaldb": "^0.12.0",
+    "signaldb-plugin-maverickjs": "^1.0.2",
+    "signaldb-plugin-solid": "^1.0.2",
+    "solid-js": "^1.8.17",
+    "tsx": "^4.15.6",
+    "vike": "^0.4.177",
+    "vite": "^5.3.1"
+  }
+}
